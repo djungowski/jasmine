@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webinar Angular Anwendung</title>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+    <script type="text/javascript" src="src/date-controller.js"></script>
+</head>
+
+<body ng-app="Webinar">
+    <div ng-controller="Webinar.DateController">
+        <p ng-click="changeDate()">Click me</p>
+        <p>{{ currentDate() }}</p>
+    </div>
+</body>
+
+</body>
+</html>
