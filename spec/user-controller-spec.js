@@ -21,4 +21,12 @@ describe('UserController', function() {
             expect(this.scope.userName).toEqual('Dr. Zoidberg');
         });
     });
+    
+    describe('openUserInfo()', function() {
+        it('opens user info in a new window', inject(function($window) {
+            spyOn($window, 'open');
+            this.scope.openUserInfo();
+            expect($window.open).toHaveBeenCalledWith('/user/show');
+        }));
+    });
 });

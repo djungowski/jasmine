@@ -1,4 +1,4 @@
-Webinar.UserController = function ($scope, $http) {
+Webinar.UserController = function ($scope, $http, $window) {
     $scope.userName = null;
 
     $scope.getUserNameFromServer = function () {
@@ -7,5 +7,9 @@ Webinar.UserController = function ($scope, $http) {
         };
 
         $http.post('/user/name').success(readUsernameFromResponse);
+    };
+
+    $scope.openUserInfo = function () {
+        $window.open('/user/show');
     };
 };
