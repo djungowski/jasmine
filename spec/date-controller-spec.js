@@ -15,6 +15,7 @@ describe('DateController', function() {
             var currentValue = this.scope.currentDate();
             this.scope.changeDate();
             expect(this.scope.currentDate()).not.toEqual(currentValue)
+            expect(parseInt(this.scope.currentDate())).toEqual(jasmine.any(Number));
         });
     });
 });
