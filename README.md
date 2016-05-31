@@ -4,4 +4,4 @@ Links:
 * [angular-mocks.js](https://code.angularjs.org/1.5.6/angular-mocks.js)
 
 Branches:
-* angular: AngularJS Beispiele
+* [angular](https://github.com/djungowski/jasmine/tree/angular): AngularJS Beispiele
